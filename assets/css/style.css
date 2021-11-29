@@ -1,0 +1,87 @@
+/* Estilos da página index.html*/
+.center{
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li{
+    display: inline;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: #c3c3c3;
+    font-size: 15px;
+    float: right;
+    margin: 0px 25px 25px 30px;
+}
+
+#menu li a:hover{
+    color: #85E9EB;
+}
+
+.p-30{
+    padding: 25px;
+}
+
+.br-50{
+    border-radius: 50%;
+}
+
+.wh-300{
+    width: 350px;
+    height: 355px;
+}
+
+.tm-social{
+    width: 50px;
+    height: 50px;
+
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.ml-50{
+    margin-left: 50px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.ml-300{
+    margin-left: 300px;
+}
+
+.fonte{
+font-family: 'Cairo', sans-serif;
+color: #c3c3c3
+}
+
+.button{
+font-family: 'Cairo', sans-serif;
+color: #1E2526
+} 
+
+.borda{
+    border-radius: 2px;
+}
+
+.titulo{
+    font-family: 'Cairo', sans-serif;
+    color: #85E9EB
+}

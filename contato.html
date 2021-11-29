@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imagens/favicon.png">
+</head>
+
+<body style="background-color: #1E2526;">
+    <ul id="menu" class="fonte">
+        <li>
+            <a href="contato.html">Contato</a>
+        </li>
+    
+        <li>
+            <a href="index.html">Home</a>
+            <!--<a href= "" target="_blank">Home</a> Para abrir em outra guia-->
+        </li>
+    </ul>
+
+    <h1 class="center titulo">Contate-nos</h1>
+    
+    <div class="container mb-50">
+        <div>
+            
+            <form>
+                <label class="fonte" for="nome">Nome:</label><br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+                <br>
+        
+                <label class="fonte" for="email">E-mail:</label><br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+                <br>
+        
+                <label class="fonte" for="assunto">Assunto:</label><br>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+                <br>
+                <br>
+        
+                <button onclick="enviar()" class="button">Enviar</button>
+            </form>
+        </div>
+
+        <div class="ml-50 fonte">
+
+            <p>Rua Galáxia</p>
+            <p>Itu/ SP</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.7622139588516!2d-47.340460585102214!3d-23.396817984764844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf5c509049f65d%3A0x77edad30d8527d14!2sR.%20Gal%C3%A1xia%20-%20Jardim%20Novo%20Mundo%2C%20Itu%20-%20SP%2C%2013308-420!5e0!3m2!1spt-BR!2sbr!4v1638167003851!5m2!1spt-BR!2sbr" width="400" height="230" style="border:0;" allowfullscreen="" loading="lazy" class="borda" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="container">
+            <a href="">
+                <img class="tm-social p-30" src="assets/imagens/linkedin.png" alt="Logo do Linkedin" target="_blank">
+            </a>
+            
+            <a href="">
+                <img class="tm-social p-30" src="assets/imagens/instagram.png" alt="Logo do Instagram" target="_blank">
+            </a>
+        </div>
+
+        <p class="center fonte"> 
+            Todos os direitos reservados: Talita Ribeiro &copy
+        </p>
+        
+    </footer>
+
+    <!--<form action=""></form> Com atributo action para envio de formulário-->
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
