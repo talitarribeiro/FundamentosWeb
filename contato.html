@@ -32,21 +32,22 @@
             
             <form>
                 <label class="fonte" for="nome">Nome:</label><br>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
                 <br>
         
                 <label class="fonte" for="email">E-mail:</label><br>
-                <input type="email" id="email">
-                <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
                 <br>
         
                 <label class="fonte" for="assunto">Assunto:</label><br>
-                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
                 <br>
                 <br>
         
-                <button class="button">Enviar</button>
+                <button onclick="enviar()" class="button">Enviar</button>
             </form>
         </div>
 
@@ -55,7 +56,7 @@
             <p>Rua Galáxia</p>
             <p>Itu/ SP</p>
 
-            <iframe class="borda" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.7622139588516!2d-47.340460585102214!3d-23.396817984764844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf5c509049f65d%3A0x77edad30d8527d14!2sR.%20Gal%C3%A1xia%20-%20Jardim%20Novo%20Mundo%2C%20Itu%20-%20SP%2C%2013308-420!5e0!3m2!1spt-BR!2sbr!4v1638167003851!5m2!1spt-BR!2sbr" width="400" height="215" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.7622139588516!2d-47.340460585102214!3d-23.396817984764844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf5c509049f65d%3A0x77edad30d8527d14!2sR.%20Gal%C3%A1xia%20-%20Jardim%20Novo%20Mundo%2C%20Itu%20-%20SP%2C%2013308-420!5e0!3m2!1spt-BR!2sbr!4v1638167003851!5m2!1spt-BR!2sbr" width="400" height="230" style="border:0;" allowfullscreen="" loading="lazy" class="borda" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
 
         </div>
 
@@ -80,9 +81,9 @@
         
     </footer>
 
-
     <!--<form action=""></form> Com atributo action para envio de formulário-->
 
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
